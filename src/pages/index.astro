@@ -1,9 +1,9 @@
 ---
-// Component Imports
-import Button from '../components/Button.astro';
+// Font Imports
+import "@fontsource-variable/inter"; // Supports weights 300-800
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+// Component Imports
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -12,13 +12,56 @@ import Button from '../components/Button.astro';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
+		<title>Seyed - Homepage</title>
 	</head>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
+	<body class="space-y-6 px-8">
+		<header>
+			<h1 class="font-black tracking-tighter uppercase text-2xl">
+				Seyed Sadegh Ataii
+			</h1>
+			<p class="text-xl font-semibold font-thin tracking-tighter">
+				Jack of all trades / Master of none
+			</p>
+		</header>
+		<nav>
+			<ul class="flex space-x-6">
+				<li
+					class="text-blue-900 hover:text-blue-400 font-semibold underline capitalize cursor-pointer"
+				>
+					Homepage
+				</li>
+				<li
+					class="text-blue-900 hover:text-blue-400 font-semibold underline capitalize cursor-pointer"
+				>
+					About
+				</li>
+				<li
+					class="text-blue-900 hover:text-blue-400 font-semibold underline capitalize cursor-pointer"
+				>
+					Contact
+				</li>
+				<li
+					class="text-blue-900 hover:text-blue-400 font-semibold underline capitalize cursor-pointer"
+				>
+					Blog
+				</li>
+				<li
+					class="text-blue-900 hover:text-blue-400 font-semibold underline capitalize cursor-pointer"
+				>
+					Projects
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<p class="">
+				My name is <strong>Seyed Sadegh Ataii</strong> and I'm a jack of
+				all trades, master of none. This is my website, it isn't much to
+				look at but hopefully it will suffice as a means to an end
+			</p>
+		</main>
+		<footer>
+			<p class="text-xs">Copyright 2023 - All rights reserved</p>
+		</footer>
 	</body>
 </html>
