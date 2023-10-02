@@ -4,6 +4,7 @@ import "@fontsource-variable/inter"; // Supports weights 300-800
 
 // Component Imports
 import Button from "../components/Button.astro";
+import Nav from "../components/navigation/Nav.astro";
 ---
 
 <html lang="en">
@@ -24,6 +25,13 @@ import Button from "../components/Button.astro";
 				Jack of all trades / Master of none
 			</p>
 		</header>
+		<Nav>
+			<li
+				class="text-blue-900 hover:text-blue-400 font-semibold underline capitalize cursor-pointer"
+			>
+				Homepage
+			</li>
+		</Nav>
 		<nav>
 			<ul class="sm:flex sm:space-x-6">
 				<li
